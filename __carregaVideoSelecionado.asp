@@ -17,19 +17,19 @@ id = request.querystring("id")
 
 Select Case id
     Case 1
-        video = "7x2f5f_bN78"
+        video = "F_2k-A5LUgw"
     Case 2
-        video = "7x2f5f_bN78"
+        video = "F_2k-A5LUgw"
     Case 3
-        video = "7x2f5f_bN78"
+        video = "F_2k-A5LUgw"
     Case 4
-        video = "Vm8VrLiuWOo"
+        video = "F_2k-A5LUgw"
     Case 5
-        video = "Vm8VrLiuWOo"
+        video = "F_2k-A5LUgw"
     Case 6
-        video = "Vm8VrLiuWOo"
+        video = "F_2k-A5LUgw"
     Case else
-        video = "Vm8VrLiuWOo"
+        video = "F_2k-A5LUgw"
 End Select
 
 
