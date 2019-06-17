@@ -1,0 +1,12 @@
+/* Eduardo Fagnoni | http://www.efweb.com.br | eduardofagnoni@gmail.com */
+
+/* ==========================================================================
+   Regula a proporção das fontes no documento.
+   1em passa a ser equivalente à 10px.
+   Para transformar os pixels em EMs basta andar uma casa para a esquerda
+   e colocar um ponto. Por exemplo:
+   14px é igual à 1.4em
+   36px é o mesmo que 3.6em
+   ========================================================================== */
+body {font-size: 62.5%;}
+

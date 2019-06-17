@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+                
+        <!-- Description -->
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+
+        <!-- Meta Facebook Markup -->
+        <meta property="og:url" content="" >
+        <meta property="og:type" content="" >
+        <meta property="og:title" content="" >
+        <meta property="og:description" content="" >
+        <meta property="og:image" content="" >
+        <meta property="og:image:type" content="image/jpeg" >
+        <meta property="og:image:width" content="1200" >
+        <meta property="og:image:height" content="1200" >
+
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="" />
+        <meta name="twitter:site" content="" />
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:description" content="" />
+        <meta name="twitter:image" content="" />
+
+        <!-- Meta Google Markup -->
+        <meta itemprop="name" content="">
+        <meta itemprop="description" content="">
+        <meta itemprop="image" content="">
+
+        <!-- Fav and touch icons -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+        <meta name="application-name" content=""/>
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+        <!-- Folhas de estilo -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="stylesheet/styles.min.css">
+        <link href="lib/jquery.bxslider.css" rel="stylesheet" />          
+        
+        <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
+
+        <!-- itens AMP -->
+        <link rel="canonical" href="o_clube.html">
+        <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>      
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <!-- itens AMP -->
+
+    </head>
+    <body id="">
+
+
+        
+        <!-- header da página -->
+        <header id="header" class="bkg-vermelho">
+            <div class="container">
+                <h1 onclick="location.href='index_logada.html'"><img src="images/logoCartaoAmigoAudibel.png" alt="Cartão Amigo Audibel" title="Cartão Amigo Audibel" style="max-width: 100%;"></h1>
+                
+                <div id="informacoes_pessoais">
+                    <div class="nome">
+                        <p>Olá, Paulo Matheus Barbosa</p>
+                        <p>Cartão: 35465897</p>
+                    </div>
+                    <div class="fotoPerfil" style="background-image: url('images/fotoPerfil.jpg');"></div>
+                    <button onclick="abreMenu();">Meu Clube <span></span></button>
+                
+                    <!-- ******************************************
+                            Caixa de controle da foto do perfil
+                    ******************************************* -->
+                    <div class="ponto-zero">
+                        <div class="controlesPerfil">
+                            <div class="ponto-zero">
+                                <div class="seta-topo"></div>
+                                <button class="fechar" onclick="fechaMenu();"></button>
+                            </div>
+
+                            <p style="font-size: 2em; margin: 0; padding: 0;">Atualizar foto de perfil</p>
+                            <hr style="margin: 5px 0; padding: 0; height: 1px; background-color: #000; border: none;">
+                            <form>
+                                <label style="text-align: left; font-size: 1.5em; font-weight: 400;">Nenhum arquivo selecionado.</label>
+                                <button class="btn_carregarFoto">Carregar Foto</button>
+
+                                <p class="text-left" style="font-size: 1.333em;">Obs: A foto deve estar no formato .jpg ou .png e seu nome não pode conter espaços, acentuações e caracteres especiais.</p>
+
+                                <button class="btn_Salvar">Salvar</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- ******************************************
+                            Caixa de controle da foto do perfil
+                    ******************************************* -->
+                    
+                </div>
+
+            </div>
+
+
+            <nav id="nav">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span><img src="images/menu.png" alt="menu"></span>                            
+                        </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">                  
+
+                        <ul class="nav navbar-nav navbar-right fontMenu">
+                            <li class="active"><a href="o_clube.html">O Cartão Amigo Audibel</a></li>
+                            <li><a href="campanhas.html">Campanhas</a></li>
+                            <li><a href="videos.html">Vídeos</a></li>
+                            <li><a href="curiosidades.html">Curiosidades</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid --> 
+            </nav>
+        </header>
+        <!-- / final do header -->
+
+        <div class="espaco"></div><!-- Necessário para a ancoragem correta dos itens do menu -->
+
+        <!-- banner -->
+        <article id="banner_fixo" class="o_clube">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-3">&nbsp;</div>
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <span class="pontoAcimaDosTitulos bkg-vermelho"></span>
+                        <h2 class="text-center txt-branco">O Cartão Amigo Audibel</h2>
+                        <p class="text-center txt-branco">Para a Audibel, você não é apenas um cliente, mas um verdadeiro amigo. Por isso, ela criou um verdadeiro clube de vantagens especialmente para você. Ao tornar-se um membro, você passa a ter acesso a diversos serviços e vantagens exclusivos.</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-3">&nbsp;</div>
+                </div>
+            </div>
+
+        </article>
+        <!-- / Finla do banner -->
+        
+
+
+        <!-- cartao amigo -->
+        <section id="CartaoAmigo" class="bkg-cinza-claro">
+        <a id="anc-cartao-amigo" class="ancoras"></a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-3"></div>
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <span class="pontoAcimaDosTitulos bkg-cinza-escuro"></span>
+                        <h2 class="text-center txt-vermelho">Benefícios</h2>                        
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-3"></div>
+                </div>
+
+
+                <ul class="lista_alternada">
+                    <li class=" scrollme animateme"
+                    data-when="enter"
+                    data-from="0.75"
+                    data-to="0"    
+                    data-crop="false"                
+                    data-opacity="0.5"
+                    data-translatey="50">
+                        <div class="cont_iten_lista">
+                            <h3 class="txt-vermelho">Preços especiais</h3>
+                            <p>Com o Cartão Amigo Audibel, além da facilidade de agendar suas revisões, você ainda tem preços especiais, inclusive na limpeza do seu aparelho.</p>
+                        </div>
+                        <div class="circulo">
+                            <span><img src="images/ico1.png" alt=""></span>
+                        </div>
+                    </li>
+                    <li class=" scrollme animateme"
+                    data-when="enter"
+                    data-from="0.75"
+                    data-to="0"    
+                    data-crop="false"                
+                    data-opacity="0.5"
+                    data-translatey="50">
+                        <div class="circulo">
+                            <span><img src="images/ico2.png" alt=""></span>
+                        </div>
+                        <div class="cont_iten_lista">
+                            <h3 class="txt-vermelho">Lançamentos e novidades</h3>
+                            <p>Saiba em primeira mão sobre as novidades, lançamentos, promoções e concursos culturais da Audibel.</p>
+                        </div>
+                    </li>
+                    <li class=" scrollme animateme"
+                    data-when="enter"
+                    data-from="0.75"
+                    data-to="0"    
+                    data-crop="false"                
+                    data-opacity="0.5"
+                    data-translatey="50">
+                        <div class="cont_iten_lista">
+                            <h3 class="txt-vermelho">Pilhas e acessórios</h3>
+                            <p>Descontos exclusivos e mais do que especiais nas pilhas, protetores de ouvido e  acessórios para o seu aparelho.</p>
+                        </div>
+                        <div class="circulo">
+                            <span><img src="images/ico3.png" alt=""></span>
+                        </div>
+                    </li>
+                    <li class=" scrollme animateme"
+                    data-when="enter"
+                    data-from="0.75"
+                    data-to="0"    
+                    data-crop="false"                
+                    data-opacity="0.5"
+                    data-translatey="50">                     
+                        <div class="circulo">
+                            <span><img src="images/ico4.png" alt=""></span>
+                        </div>
+                        <div class="cont_iten_lista">
+                            <h3 class="txt-vermelho">Conteúdos exclusivos</h3>
+                            <p>Cliente com Cartão Clube Amigo Audibel tem acesso a conteúdos exclusivos, como vídeos explicativos, curiosidades e matérias especiais.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>            
+        </section>
+        <!-- / final do cartão amigo -->
+
+
+
+        <!-- termos e condições -->
+        <section id="termosECondicoes" class="bkg-cinza-escuro-2">        
+            <div class="container scrollme animateme"
+            data-when="enter"
+            data-from="0.75"
+            data-to="0"    
+            data-crop="false"                
+            data-opacity="0.5"
+            data-translatey="50">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-2"></div>
+                    <div class="col-xs-12 col-sm-12 col-md-8">
+                        <span class="pontoAcimaDosTitulos bkg-vermelho"></span>
+                        <h2 class="text-center txt-branco">Termos e Condições</h2> 
+                        <p class="txt-branco text-center">Este documento contém INFORMAÇÕES LEGAIS importantes para a utilização do Cartão Amigo Audibel, como regras sobre manutenção e proteção de dados pessoais do usuário.</p>
+                                                
+                        <div class="text-center txt-branco" style="margin: 30px 0 0 0;"><a href="" class="txt-branco" style="font-size: 1.6em;"><span style="margin: 0 10px 0 0;"><img src="images/ico9.png" alt=""></span>  Baixe Termos e Condições completo</a></div>                     
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-2"></div>
+                </div>                
+            </div>
+        </section>
+        <!-- / termos e condições -->    
+        
+
+        
+
+        
+
+        <!-- footer -->
+        <footer id="footer_logado">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-xs-12 col-md-2">
+                        <div class="logo"><img src="images/logoAudibel.png" alt="Audibel"></div>
+                    </div>
+                    <div class="col-xs-12 col-md-1"></div>
+                    <div class="col-xs-12 col-md-3">
+                        <ul>
+                            <li>Cartão Amigo Audibel</li>
+                            <li><a href="">O programa</a></li>
+                            <li><a href="">Benefícios</a></li>
+                            <li><a href="">Termos e Condições</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-md-2">
+                        <ul>
+                            <li>Curiosidades</li>
+                            <li><a href="">Simulador</a></li>
+                            <li><a href="">Tour de audição</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-md-1">
+                        <ul>
+                            <li>Vídeos</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-md-2">
+                        <ul>
+                            <li>Campanhas</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-md-1">
+                        <ul>
+                            <li>FAQ</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>  
+        </footer>
+
+        <div class="central_relacionamento">
+            <ul>
+                <li>
+                    <img src="images/facebook.png" alt="">
+                </li>
+                <li>
+                    <img src="images/twitter.png" alt="">
+                </li>
+                <li>
+                    <p>Central de Relacionamento:<br>
+                    0800 777 9040</p>
+                </li>
+            </ul>
+        </div>
+        <!-- / final do footer -->
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/anima.js"></script>  
+        <script src="lib/jquery.bxslider.js"></script>
+        <script src="js/jquery.smoothwheel.js"></script>
+        <script src="assets/scrollme/jquery.scrollme.js"></script>
+
+        <script src="js/circle-progress.js"></script>
+        <!-- <script src="js/examples.js"></script> -->
+
+
+
+        <script>
+
+            /* --------------------------------------------------------------------
+            //desabilita scrollme no mobile
+            ---------------------------------------------------------------------*/
+            var s = scrollme;
+            $(document).on( s.init_events.join(  ' '  ), function() { s.init("disable_on_mobile") } );
+
+            /* --------------------------------------------------------------------
+            //desabilita scrollme no mobile
+            ---------------------------------------------------------------------*/  
+
+            $(document).ready(function(){
+
+                $(".scroll a").click(function(event){
+                    event.preventDefault();
+                    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 800);
+                });
+
+                $("#pagina").smoothWheel()
+
+                $('.bxslider-banner').bxSlider({
+                    pager: true,
+                    auto: true,
+                    controls: false,
+                    pause: 9000,
+                    stopAutoOnClick: true,
+                    infiniteLoop: true,
+                }); 
+
+            });
+
+
+
+
+            /* --------------------------------------------------------------------------------
+               Círculo contador
+               o valor da variável 'value' é o total de dias
+               no trecho 'stepValue.toFixed(2)' o número '2' é
+               a quantidade de casa que aparece no contador
+               se faltar mais de 99 dias o número deve ser incrementado
+               para '3' sendo menor ou igual a 99 permanece com '2'
+            -------------------------------------------------------------------------------- */
+            (function($) {
+
+              $('.third.circle').circleProgress({
+                value: 0.55,
+                fill: {gradient: [['#bf0811', .5], ['#ff0000', .5]], gradientAngle: Math.PI / 4}
+              }).on('circle-animation-progress', function(event, progress, stepValue) {
+                $(this).find('strong').text(stepValue.toFixed(2).substr(1));
+                
+              });
+              
+            })(jQuery);
+
+
+
+
+
+        </script>      
+    </body>
+</html>
