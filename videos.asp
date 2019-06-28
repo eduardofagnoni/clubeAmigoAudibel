@@ -70,7 +70,7 @@
         <!-- itens AMP -->
 
     </head>
-    <body id="">
+    <body id=""></body>
 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTZ96L"
@@ -105,14 +105,13 @@
        
             <div class="container">
 
-                <form id="frmFiltro" name="frmFiltro" method="" action="">
-                    <select>
-                        <option>SELECIONE</option>
-                    </select>
-                </form>
+                <div class="form-group">
+                    <label class="sr-only" for="txtNome">O que você procura?</label>
+                    <input id="search" name="search" class="form-control" placeholder="O que você procura?" type="text" data-list=".list">
+                </div>
 
 
-                <div class="row scrollme animateme"
+                <div class="row scrollme animateme list"
                 data-when="enter"
                 data-from="0.75"
                 data-to="0"    
@@ -123,15 +122,17 @@
                         <div class="bloco_com_foto" data-toggle="modal" data-target="#myModal" onclick="abreFoto(1)">
                             <div class="header_content"></div>
                             <div class="foto_content">
-                                <img src="images/foto1.png" alt="">
+                                <img src="images/video-audibel.jpg" alt="">
                                 <div class="play"><img src="images/play.png" alt=""></div>
                             </div>
                             <div class="body_content">
-                                <h4>Dia do Amigo</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra dui ut fermentum tincidunt. Orci varius natoque </p>
+                                <h4>A evolução dos aparelhos auditivos | Audibel Aparelhos Auditivos</h4>
+                                <p>Aqui você pode tirar dúvidas sobre os processos de seleção e adaptação dos aparelhos auditivos.</p>
                             </div>
                         </div>
                     </div>
+
+                    <!--
                     <div class="col-xs-12 col-md-4">
                         <div class="bloco_com_foto" data-toggle="modal" data-target="#myModal" onclick="abreFoto(2)">
                             <div class="header_content"></div>
@@ -158,96 +159,24 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-xs-12 col-md-4">
+                        <div class="bloco_com_foto" data-toggle="modal" data-target="#myModal" onclick="abreFoto(3)">
+                            <div class="header_content"></div>
+                            <div class="foto_content">
+                                <img src="images/foto3.png" alt="">
+                                <div class="play"><img src="images/play.png" alt=""></div>
+                            </div>
+                            <div class="body_content">
+                                <h4>Lorem ipsum</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra dui ut fermentum tincidunt. Orci varius natoque </p>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+
+
                 </div>
-
-                <!-- ***************************************************** -->
-
-                <div class="row scrollme animateme"
-                data-when="enter"
-                data-from="0.75"
-                data-to="0"    
-                data-crop="false"                
-                data-opacity="0.5"
-                data-translatey="50">
-                    <div class="col-xs-12 col-md-4">
-                        <div class="bloco_com_foto" data-toggle="modal" data-target="#myModal" onclick="abreFoto(4)">
-                            <div class="header_content"></div>
-                            <div class="foto_content">
-                                <img src="images/foto3.png" alt="">
-                                <div class="play"><img src="images/play.png" alt=""></div>
-                            </div>
-                            <div class="body_content">
-                                <h4>Aralesm vorts laresm</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra dui ut fermentum tincidunt. Orci varius natoque</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        <div class="bloco_com_foto" data-toggle="modal" data-target="#myModal" onclick="abreFoto(5)">
-                            <div class="header_content"></div>
-                            <div class="foto_content">
-                                <img src="images/foto1.png" alt="">
-                                <div class="play"><img src="images/play.png" alt=""></div>
-                            </div>
-                            <div class="body_content">
-                                <h4>Ipsun vortales mrotas</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra dui ut fermentum tincidunt. Orci varius natoque</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        <div class="bloco_com_foto" data-toggle="modal" data-target="#myModal" onclick="abreFoto(6)">
-                            <div class="header_content"></div>
-                            <div class="foto_content">
-                                <img src="images/foto2.png" alt="">
-                                <div class="play"><img src="images/play.png" alt=""></div>
-                            </div>
-                            <div class="body_content">
-                                <h4>Aemos varelos vars</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra dui ut fermentum tincidunt. Orci varius natoque</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-
-                <!-- ***************************************************** -->
-
-                <div class="row scrollme animateme"
-                data-when="enter"
-                data-from="0.75"
-                data-to="0"    
-                data-crop="false"                
-                data-opacity="0.5"
-                data-translatey="50">
-                    <div class="col-xs-12 col-md-4">
-                        <div class="bloco_com_foto" data-toggle="modal" data-target="#myModal" onclick="abreFoto(7)">
-                            <div class="header_content"></div>
-                            <div class="foto_content">
-                                <img src="images/foto2.png" alt="">
-                                <div class="play"><img src="images/play.png" alt=""></div>
-                            </div>
-                            <div class="body_content">
-                                <h4>Noratmos votes larems</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra dui ut fermentum tincidunt. Orci varius natoque</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        <div class="bloco_com_foto" data-toggle="modal" data-target="#myModal" onclick="abreFoto(8)">
-                            <div class="header_content"></div>
-                            <div class="foto_content">
-                                <img src="images/foto3.png" alt="">
-                                <div class="play"><img src="images/play.png" alt=""></div>
-                            </div>
-                            <div class="body_content">
-                                <h4>Misoramos vortes larem</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra dui ut fermentum tincidunt. Orci varius natoque</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div> 
-
 
                 <!--<div class="text-center">
                     <button class="btn_geral bkg-vermelho txt-branco"><span class="glyphicon glyphicon-repeat"></span> mais videos</button>
@@ -303,6 +232,9 @@
         <script src="js/circle-progress.js"></script>
         <script src="js/main.js"></script>
 
+        <!-- jquery responsavel pelo filtro inteligente, que funciona conforme vamos digirando a palavra -->
+        <script type="text/javascript" src="js/jquery.hideseek.min.js"></script>
+
 
 
         <script>
@@ -327,6 +259,17 @@
                 $("#pagina").smoothWheel()              
 
             });
+
+            /*------------------------------------
+            busca filtro
+            https://blog.mxcursos.com/jquery-filtrando-itens-de-uma-lista/
+            ------------------------------------*/
+            $(document).ready(function() {
+                $('#search').hideseek();
+            });
+            /*------------------------------------
+            busca filtro
+            ------------------------------------*/
 
 
         </script>      

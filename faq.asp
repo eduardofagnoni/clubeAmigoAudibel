@@ -106,39 +106,54 @@
             <div class="container">
 
 
-                <form id="frmBusca" name="frmBusca" method="" action="">
-                    <input type="text" name="txtBusca" id="txtBusca" placeholder="busca">
-                </form>
+                <div class="form-group">
+                    <label class="sr-only" for="txtNome">O que você procura?</label>
+                    <input id="search" name="search" class="form-control" placeholder="O que você procura?" type="text" data-list=".list">
+                </div>
 
 
-                <ul>
+                <ul class="list">
                     <li>
-                        <p>1. Sed libero nulla, gravida et viverra at, suscipit id enim?</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut eros sem. Sed libero nulla, gravida et viverra at, suscipit id enim. Praesent porttitor lorem metus, eu condimentum arcu vehicula ut. Etiam venenatis arcu at ullamcorper maximus. In ut magna eget massa fermentum faucibus. Nam dignissim odio sit amet nibh facilisis, eget finibus purus dignissim. Suspendisse dignissim ligula ut pulvinar euismod. Donec at efficitur massa. Aliquam maximus tristique neque, in rutrum nunc dictum eget.</p>
+                        <p>1. Como eu encontro uma unidade mais próxima da minha região?</p>
+                        <p>Pode acessar esse link abaixo, selecionar estado e cidade, para encontrar a unidade mais próxima. <br><a href="https://www.audibel.com.br/nossas_unidades.asp" target="_blank" >Nossas Unidades</a>
+</p>
                     </li>
                     <li>
-                        <p>2. Sed libero nulla, gravida et viverra at, suscipit id enim?</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut eros sem. Sed libero nulla, gravida et viverra at, suscipit id enim. Praesent porttitor lorem metus, eu condimentum arcu vehicula ut. Etiam venenatis arcu at ullamcorper maximus. In ut magna eget massa fermentum faucibus. Nam dignissim odio sit amet nibh facilisis, eget finibus purus dignissim. Suspendisse dignissim ligula ut pulvinar euismod. Donec at efficitur massa. Aliquam maximus tristique neque, in rutrum nunc dictum eget.</p>
+                        <p>2. Quando eu preciso fazer a revisão dos meus aparelhos?</p>
+                        <p>A revisão e limpeza dos seus aparelhos devem ser feitas a cada 6 meses, mesmo que eles estejam em pleno funcionamento. Assista ao vídeo disponível aqui no site, para entender melhor sobre esse trabalho.</p>
                     </li>
                     <li>
-                        <p>3. Sed libero nulla, gravida et viverra at, suscipit id enim?</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut eros sem. Sed libero nulla, gravida et viverra at, suscipit id enim. Praesent porttitor lorem metus, eu condimentum arcu vehicula ut. Etiam venenatis arcu at ullamcorper maximus. In ut magna eget massa fermentum faucibus. Nam dignissim odio sit amet nibh facilisis, eget finibus purus dignissim. Suspendisse dignissim ligula ut pulvinar euismod. Donec at efficitur massa. Aliquam maximus tristique neque, in rutrum nunc dictum eget.</p>
+                        <p>3. É preciso agendar a revisão dos meus aparelhos?</p>
+                        <p>Em unidades que possuem laboratório próprio, pode ser necessário agendar para que possa retirar seus aparelhos no mesmo dia, caso não haja necessidade de manutenção. Nas demais, não é preciso agendar, apenas levar à unidade que o orientará sobre o processo. Em caso de dúvida, entre em contato com sua unidade, por telefone.</p>
                     </li>
                     <li>
-                        <p>4. Sed libero nulla, gravida et viverra at, suscipit id enim?</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut eros sem. Sed libero nulla, gravida et viverra at, suscipit id enim. Praesent porttitor lorem metus, eu condimentum arcu vehicula ut. Etiam venenatis arcu at ullamcorper maximus. In ut magna eget massa fermentum faucibus. Nam dignissim odio sit amet nibh facilisis, eget finibus purus dignissim. Suspendisse dignissim ligula ut pulvinar euismod. Donec at efficitur massa. Aliquam maximus tristique neque, in rutrum nunc dictum eget.</p>
+                        <p>4. O cartão amigo é realmente gratuito?</p>
+                        <p>Sim, não é preciso pagar nenhum tipo de anuidade ou taxas. Ele apenas fornece descontos em pilhas, acessórios e até revisão e limpeza, em qualquer unidade Audibel.</p>
                     </li>
                     <li>
-                        <p>5. Sed libero nulla, gravida et viverra at, suscipit id enim?</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut eros sem. Sed libero nulla, gravida et viverra at, suscipit id enim. Praesent porttitor lorem metus, eu condimentum arcu vehicula ut. Etiam venenatis arcu at ullamcorper maximus. In ut magna eget massa fermentum faucibus. Nam dignissim odio sit amet nibh facilisis, eget finibus purus dignissim. Suspendisse dignissim ligula ut pulvinar euismod. Donec at efficitur massa. Aliquam maximus tristique neque, in rutrum nunc dictum eget.</p>
+                        <p>5. Preciso apresentar o cartão amigo para conseguir os benefícios na minha unidade?</p>
+                        <p>É melhor sempre tê-lo em mãos, mas, senão tiver, basta mencionar o número de seu CPF.</p>
                     </li>
                     <li>
-                        <p>6. Sed libero nulla, gravida et viverra at, suscipit id enim?</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut eros sem. Sed libero nulla, gravida et viverra at, suscipit id enim. Praesent porttitor lorem metus, eu condimentum arcu vehicula ut. Etiam venenatis arcu at ullamcorper maximus. In ut magna eget massa fermentum faucibus. Nam dignissim odio sit amet nibh facilisis, eget finibus purus dignissim. Suspendisse dignissim ligula ut pulvinar euismod. Donec at efficitur massa. Aliquam maximus tristique neque, in rutrum nunc dictum eget.</p>
+                        <p>6. Posso comprar pilhas para meus aparelhos auditivos de qualquer marca?</p>
+                        <p>As pilhas Audibel têm qualidade testada e comprovada por nossa equipe e aconselhamos que seja a primeira escolha. Mas outras boas marcas também podem ser utilizadas. Só é importante sempre comprar pilhas especiais para aparelhos auditivos.</p>
                     </li>
                     <li>
-                        <p>7. Sed libero nulla, gravida et viverra at, suscipit id enim?</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut eros sem. Sed libero nulla, gravida et viverra at, suscipit id enim. Praesent porttitor lorem metus, eu condimentum arcu vehicula ut. Etiam venenatis arcu at ullamcorper maximus. In ut magna eget massa fermentum faucibus. Nam dignissim odio sit amet nibh facilisis, eget finibus purus dignissim. Suspendisse dignissim ligula ut pulvinar euismod. Donec at efficitur massa. Aliquam maximus tristique neque, in rutrum nunc dictum eget.</p>
+                        <p>7. Quanto tempo devem durar as pilhas dos meus aparelhos auditivos? </p>
+                        <p>A duração varia de acordo com a tecnologia de seu aparelho, quantidade de recursos acionados e tempo de uso. Para que possa se programar e não ser pego de supresa, vale sempre marcar a data de início e término de uma pilha. Fazendo isso por umas 3 vezes seguidas, você encontrará seu padrão de duração.</p>
+                    </li>
+
+                    <li>
+                        <p>8. De quanto em quanto tempo é preciso trocar meu desumidificador?</p>
+                        <p>Aconselhamos trocar o refil (não precisa comprar o conjunto inteiro) a cada 6 meses.</p>
+                    </li>
+                    <li>
+                        <p>9. Quando devo agendar meu retorno com o fonoaudiólogo?</p>
+                        <p>Sempre que sentir qualquer incômodo, ou alguma diferença em sua audição, é importante consultar seu Fonoaudiólogo. Basta ligar e agendar. Lembrando que as consultas não são cobradas.</p>
+                    </li>
+                    <li>
+                        <p>10. Qual é o momento correto de trocar meus aparelhos auditivos?</p>
+                        <p>Os aparelhos funcionam muito bem entre 4 a 5 anos. Contudo, a tecnologia dos aparelhos evolui a cada ano. É importante sempre se manter informado sobre as novidades, para buscar novas opções que tragam ainda mais benefícios. Ou seja, você pode trocar quando conhecer algo novo ou quando sentir que o atual não está tão eficiente. Obs: Após 5 anos, a manutenção se torna difícil e os componentes, como de qualquer aparelho eletrônico, ficam mais frágeis.</p>
                     </li>
                 </ul>
 
@@ -165,6 +180,9 @@
         <script src="js/anima.js"></script>  
         <script src="js/jquery.smoothwheel.js"></script>
 
+        <!-- jquery responsavel pelo filtro inteligente, que funciona conforme vamos digirando a palavra -->
+        <script type="text/javascript" src="js/jquery.hideseek.min.js"></script>
+
 
         <script>
 
@@ -180,7 +198,16 @@
             });
 
 
-
+            /*------------------------------------
+            busca filtro
+            https://blog.mxcursos.com/jquery-filtrando-itens-de-uma-lista/
+            ------------------------------------*/
+            $(document).ready(function() {
+                $('#search').hideseek();
+            });
+            /*------------------------------------
+            busca filtro
+            ------------------------------------*/
 
 
 

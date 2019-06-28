@@ -69,6 +69,33 @@
         <script async src="https://cdn.ampproject.org/v0.js"></script>
         <!-- itens AMP -->
 
+
+<script language="javascript" type="text/javascript">
+
+    function ligarPara() {
+        if (navigator.userAgent.indexOf("Android") != -1) {
+            location.href='tel:08004668347';
+        } 
+        else if (navigator.userAgent.indexOf("iPhone") != -1) {
+            location.href='callto:08004668347';
+        } else {
+            location.href='tel:08004668347';
+        }
+    }
+
+    function ligarParaCentral() {
+        if (navigator.userAgent.indexOf("Android") != -1) {
+            location.href='tel:08007779040';
+        } 
+        else if (navigator.userAgent.indexOf("iPhone") != -1) {
+            location.href='callto:08007779040';
+        } else {
+            location.href='tel:08007779040';
+        }
+    }
+</script>
+
+
     </head>
     <body id="">
 
@@ -87,19 +114,14 @@
             <ul class="bxslider-banner">                
                 <li>
                     <div>
-                        <a href=""><img src="images/banner_logada.png" alt=""></a>
+                        <a href="faq.asp"><img src="images/bem-vindos-clube-amigo.png" alt=""></a>
                     <div>
                 </li>
                 <li>
                     <div>
-                        <a href=""><img src="images/banner_logada.png" alt=""></a>
+                        <a href=""><img src="images/nossa-amizade-nao-tem-preco.png" alt=""></a>
                     <div>                  
-                </li>  
-                <li>
-                    <div>
-                        <a href=""><img src="images/banner_logada.png" alt=""></a>
-                    <div>                  
-                </li>                                              
+                </li>                                             
             </ul>
         </article>
         <!-- / Finla do banner -->
@@ -216,18 +238,20 @@
                 data-opacity="0.5"
                 data-translatey="50">
                     <div class="col-xs-12 col-md-4">
-                        <div class="bloco_com_foto">
+                        <div class="bloco_com_foto" data-toggle="modal" data-target="#myModal" onclick="abreFoto(1)">
                             <div class="header_content"></div>
                             <div class="foto_content">
-                                <img src="images/foto1.png" alt="">
+                                <img src="images/video-audibel.jpg" alt="">
                                 <div class="play"><img src="images/play.png" alt=""></div>
                             </div>
                             <div class="body_content" style="background:#ededeb">
-                                <h4>Tour da Audição</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra dui ut fermentum tincidunt. Orci varius natoque </p>
+                                <h4>A evolução dos aparelhos auditivos | Audibel Aparelhos Auditivos</h4>
+                                <p>Aqui você pode tirar dúvidas sobre os processos de seleção e adaptação dos aparelhos auditivos.</p>
                             </div>
                         </div>
                     </div>
+
+                    <!--
                     <div class="col-xs-12 col-md-4">
                         <div class="bloco_com_foto">
                             <div class="header_content"></div>
@@ -252,13 +276,14 @@
                             </div>
                         </div>
                     </div>
+                    -->
                 </div>
 
                 <!-- ***************************************************** -->                            
 
 
                 <div class="text-center">
-                    <button class="btn_geral bkg-vermelho txt-branco"><span class="glyphicon glyphicon-repeat"></span> mais curiosidades</button>
+                    <button class="btn_geral bkg-vermelho txt-branco" onclick="location.href='curiosidades.asp'"><span class="glyphicon glyphicon-repeat"></span> mais curiosidades</button>
                 </div>
 
             </div>
@@ -281,14 +306,19 @@
                     <div class="col-xs-12 col-sm-12 col-md-8">
                         <span class="pontoAcimaDosTitulos bkg-branco"></span>
                         <h2 class="text-center txt-vermelho">Fale Conosco</h2> 
-                        <p class="txt-branco text-center">Mais do que Aparelhos Auditivos.<br>Marque sua consulta agora e conheça a Audibel.</p>
+                        <!--<p class="txt-branco text-center">Mais do que Aparelhos Auditivos.<br>Marque sua consulta agora e conheça a Audibel.</p>-->
+                        <!--
                         <form id="frmContato" name="frmContato" method="post" action="">
                             <input type="text" name="txtNome" id="txtNome" placeholder="Nome">
                             <input type="email" name="txtEmail" id="txtEmail" placeholder="E-mail">
                             <button type="submit"><span class="glyphicon glyphicon-chevron-right"></span></button>
                         </form> 
-                        <p class="txt-branco text-center" style="text-transform: uppercase; font-size: 1.8em">Central de Relacionamento AUDIBEL: <span class="txt-vermelho sem-link">0800 777 9040</span></p>
-                        <div class="text-center"><a href="http://www.audibel.com.br" class="txt-vermelho" style="font-size: 2.533em;">www.audibel.com.br</a></div>                     
+                        -->
+                        <p class="txt-branco text-center" style="text-transform: uppercase; font-size: 1.8em; cursor:pointer">Agende sua consulta: <span class="txt-vermelho sem-link" onclick="ligarPara();">0800 466 8347</span></p>
+
+                        <div class="text-center"><a href="https://wa.me/5511994425603?text=Olá%20Audibel!" target="_blank" class="txt-vermelho" style="font-size: 2.533em;">WhatsApp</a></div>
+                        
+                        <!--<div class="text-center"><a href="http://www.audibel.com.br" class="txt-vermelho" style="font-size: 2.533em;">www.audibel.com.br</a></div>-->                
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-2"></div>
                 </div>                
@@ -307,12 +337,39 @@
         <!-- #include file="__includes/footer.asp" -->
         
 
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="z-index:99999;">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>                    
+                    </div>
+                    <div class="modal-body">                    
+                        <div class="iframe" id="fotoaqui"></div>
+                    </div>                
+                </div>
+            </div>
+        </div>
         
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!-- ************************************************************************************************
+        *****************************************************************************************************
+        ******                                                                                         ******
+        ******      Abaixo estou usando o bootstrap.js sem estar minimizado, algumas áres foram        ******
+        ******      alteradas para quando a janela modal for fechada, existir uma chamada para a       ******
+        ******      função fechaFoto() - Caso outra página precisar usar o bootstrap.js a função       ******
+        ******      fechaFoto() precisa estar presente, mesmo que vazia, caso contrário o modal        ******
+        ******      não vai funcionar corretamente. Para páginas que não precisar fechar vídeos        ******
+        ******      usar a versão do bootstrap minimizada, que é a original.                           ******
+        ******                                                                                         ******
+        *****************************************************************************************************
+        ************************************************************************************************* -->
+        <script src="bootstrap/js/bootstrap.js"></script>
+
+        <!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
         <script src="js/plugins.js"></script>
         <script src="js/anima.js"></script>  
         <script src="lib/jquery.bxslider.js"></script>
@@ -320,7 +377,8 @@
         <script src="assets/scrollme/jquery.scrollme.js"></script>
 
         <script src="js/circle-progress.js"></script>
-        <!-- <script src="js/examples.js"></script> -->
+        
+        <script src="js/main.js"></script>
 
 
 

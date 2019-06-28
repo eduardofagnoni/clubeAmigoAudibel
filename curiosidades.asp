@@ -106,8 +106,13 @@
        
             <div class="container">
 
+                <div class="form-group">
+                    <label class="sr-only" for="txtNome">O que você procura?</label>
+                    <input id="search" name="search" class="form-control" placeholder="O que você procura?" type="text" data-list=".list">
+                </div>
 
-                <div class="row scrollme animateme"
+
+                <div class="row scrollme animateme list"
                 data-when="enter"
                 data-from="0.75"
                 data-to="0"    
@@ -115,18 +120,20 @@
                 data-opacity="0.5"
                 data-translatey="50">
                     <div class="col-xs-12 col-md-4">
-                        <div class="bloco_com_foto">
+                        <div class="bloco_com_foto" data-toggle="modal" data-target="#myModal" onclick="abreFoto(1)">
                             <div class="header_content"></div>
                             <div class="foto_content">
-                                <img src="images/foto1.png" alt="">
+                                <img src="images/video-audibel.jpg" alt="">
                                 <div class="play"><img src="images/play.png" alt=""></div>
                             </div>
                             <div class="body_content">
-                                <h4>Tour da Audição</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra dui ut fermentum tincidunt. Orci varius natoque </p>
+                                <h4>A evolução dos aparelhos auditivos | Audibel Aparelhos Auditivos</h4>
+                                <p>Aqui você pode tirar dúvidas sobre os processos de seleção e adaptação dos aparelhos auditivos.</p>
                             </div>
                         </div>
                     </div>
+
+                    <!--
                     <div class="col-xs-12 col-md-4">
                         <div class="bloco_com_foto">
                             <div class="header_content"></div>
@@ -151,17 +158,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- ***************************************************** -->
-
-                <div class="row scrollme animateme"
-                data-when="enter"
-                data-from="0.75"
-                data-to="0"    
-                data-crop="false"                
-                data-opacity="0.5"
-                data-translatey="50">   
                     <div class="col-xs-12 col-md-4">
                         <div class="bloco_com_foto">
                             <div class="header_content"></div>
@@ -169,29 +166,17 @@
                                 <img src="images/foto3.png" alt="">
                             </div>
                             <div class="body_content">
-                                <h4>Aralesm vorts laresm</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra dui ut fermentum tincidunt. Orci varius natoque</p>
+                                <h4>Lorem ipsum</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra dui ut fermentum tincidunt. Orci varius natoque </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-4">
-                        <div class="bloco_com_foto">
-                            <div class="header_content"></div>
-                            <div class="foto_content">
-                                <img src="images/foto1.png" alt="">
-                            </div>
-                            <div class="body_content">
-                                <h4>Ipsun vortales mrotas</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra dui ut fermentum tincidunt. Orci varius natoque</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        
-                    </div>
-                </div> 
+                    -->
 
-                
+
+                </div>
+
+                               
 
 
                 <!--<div class="text-center">
@@ -248,6 +233,9 @@
         <script src="js/circle-progress.js"></script>
         <script src="js/main.js"></script>
 
+        <!-- jquery responsavel pelo filtro inteligente, que funciona conforme vamos digirando a palavra -->
+        <script type="text/javascript" src="js/jquery.hideseek.min.js"></script>
+
 
 
         <script>
@@ -272,6 +260,17 @@
                 $("#pagina").smoothWheel()               
 
             });
+
+            /*------------------------------------
+            busca filtro
+            https://blog.mxcursos.com/jquery-filtrando-itens-de-uma-lista/
+            ------------------------------------*/
+            $(document).ready(function() {
+                $('#search').hideseek();
+            });
+            /*------------------------------------
+            busca filtro
+            ------------------------------------*/
 
         </script>      
     </body>

@@ -9,33 +9,37 @@
                 </div>
                 <div class="col-xs-12 col-md-1"></div>
                 <div class="col-xs-12 col-md-3">
+                    <!--
                     <ul>
                         <li>Cartão Amigo Audibel</li>
                         <li><a href="">O programa</a></li>
                         <li><a href="">Benefícios</a></li>
                         <li><a href="">Termos e Condições</a></li>
                     </ul>
+                    -->
                 </div>
                 <div class="col-xs-12 col-md-2">
+                    <!--
                     <ul>
                         <li>Curiosidades</li>
                         <li><a href="">Simulador</a></li>
                         <li><a href="">Tour de audição</a></li>
                     </ul>
+                    -->
                 </div>
                 <div class="col-xs-12 col-md-1">
                     <ul>
-                        <li>Vídeos</li>
+                        <li onclick="location.href='videos.asp'" style="cursor:pointer">Vídeos</li>
                     </ul>
                 </div>
                 <div class="col-xs-12 col-md-2">
                     <ul>
-                        <li>Campanhas</li>
+                        <li onclick="location.href='campanhas.asp'" style="cursor:pointer">Campanhas</li>
                     </ul>
                 </div>
                 <div class="col-xs-12 col-md-1">
                     <ul>
-                        <li>FAQ</li>
+                        <li onclick="location.href='faq.asp'" style="cursor:pointer">FAQ</li>
                     </ul>
                 </div>
                 
